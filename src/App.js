@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import fig from './images/fig.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h1>ページタイトル</h1>
+      <p>
+        こんにちは！
+        <a href="https://www.ktc.ac.jp">近代高専のWEBページ</a>も観てね
+      </p>
+
+      <div>
+        <img src={fig} alt="サンプル画像" />
+      </div>
+
+      <div>
+        <h2>このページについて</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          このページは、Reactで作ったページです。<br />
+          練習用に作成しました。
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+
+      <div>
+        <h2>開発方法</h2>
+        <p>
+        create-react-appで作成しました。<br />
+        App.jsを編集して、npm startで確認しています。
+      </p>
     </div>
+   </div>
   );
 }
 
